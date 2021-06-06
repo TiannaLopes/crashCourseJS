@@ -1,11 +1,13 @@
-.container-1 {
+.container-1, .container-2, .container-3, .container-4, .container-5{
     border: 1px solid black;
     width: 75%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
 }
 
-.flex-box-container-1 {
+
+.flex-box-container-1, .flex-box-container-2, .flex-box-container-3, .flex-box-pick-color, 
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
 border: 1px solid black;
 display: flex;
 justify-content: space-around;
@@ -14,27 +16,53 @@ flex-wrap:wrap;
 flex-direction: row;
 }
 
+.flex-blackjack-row-1, .flex-blackjack-row-2 {
+    /* background: url('https://ie1-gfebf.cdnppb.net/mexchangeblackjack/turbo/17/assets/gameView/tableBackground.png?v17'); */
+    /* background: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fpl.sterlingcdn.com%2Fwp-content%2Fuploads%2Fsites%2F3%2F2018%2F07%2Fblackjack-classic-background.jpg&imgrefurl=https%3A%2F%2Fcodepen.io%2Ftinyhatcoding%2Fpen%2FKbOPZV&tbnid=X-YVB6Wfc3-dAM&vet=12ahUKEwj9x8n6loHxAhWHd98KHeb1C9gQMygPegUIARD4AQ..i&docid=Tce0XGm6R9rW-M&w=1920&h=1440&q=blackjack%20background%20image&ved=2ahUKEwj9x8n6loHxAhWHd98KHeb1C9gQMygPegUIARD4AQ'); */
+    /* background: url(https://ie1-gfebf.cdnppb.net/mexchangeblackjack/turbo/17/assets/gameView/tableBackground.png?v17) no-repeat center center fixed;  */
+    background-color: green;
+    color:#FFFFFF;
+    /* flex-direction: row; */
+}
+.flex-blackjack-row-1 div{
+    border: 1px solid black;
+    padding: 10px;
+    height: 350px;
+    text-align: center;
+    flex: 1;
+}
+
+.flex-blackjack-row-1 img{
+    width:25%;
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 button{
+    border: 1px solid black;
+}
+.flex-blackjack-row-3 div{
+    border: 1px solid black;
+}
+
+table, th, td{
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
 .flex-box-container-1 div {
     padding:20px;
     border: 1px solid black;
     display: flex;
-    align-items: center;    
+    align-items: center;  
+    justify-content: space-between;  
 }
 
-.container-2 {
-    border: 1px solid red;
-    width: 75%;
-    margin: auto;
-    text-align: center;
-}
-
-.flex-box-container-2{
-    display: flex;
-    border: 1px solid blue;
-    flex-direction: row;
-}
 .flex-box-container-2 img{
-/* border: 3px solid green; */
-padding: 10px;
-box-shadow: 0px 10px 50px rgba(0,0,0,0.7);
+    margin: 10px; 
+    box-shadow: 0px 10px 50px rgba(37, 50, 223, 1);
 }
+
+.flex-box-rps img:hover{
+    box-shadow: 0px 10px 50px rgba(37, 50, 223, 1);
+}
+
